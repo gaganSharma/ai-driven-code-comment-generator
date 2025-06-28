@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Code Comment Generator</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/4712/4712103.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button
+      class="theme-toggle"
+      id="themeToggle"
+      title="Toggle dark/light mode"
+    >
+      🌙
+    </button>
+    <div class="container">
+      <h1>AI Code Comment Generator</h1>
+      <p class="subtitle">
+        Instantly generate helpful comments for your code using AI 🤖
+      </p>
+      <div style="margin-bottom: 18px">
+        <label for="language">Language:</label>
+        <select id="language">
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="inputCode"><b>Input Code</b></label>
+          <textarea
+            id="inputCode"
+            placeholder="Paste your code here..."
+          ></textarea>
+        </div>
+        <div class="col">
+          <label for="outputCode"><b>Commented Code</b></label>
+          <textarea
+            id="outputCode"
+            readonly
+            placeholder="Commented code will appear here..."
+          ></textarea>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn-generate" id="generateBtn">Generate Comments</button>
+        <button class="btn-copy" id="copyBtn" disabled>Copy</button>
+        <button class="btn-download" id="downloadBtn" disabled>Download</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
